@@ -1,0 +1,31 @@
+title: AI Resume Builder
+
+description: |
+  An AI-powered platform that generates personalised, ATS-optimised resumes
+  from a structured profile input. Users enter their work history, skills,
+  and target job description; the system produces a tailored resume in PDF
+  and DOCX formats within seconds.
+
+  The platform uses a fine-tuned language model to rewrite bullet points
+  in strong action-verb format, highlights keywords from the target JD,
+  and scores the resume against ATS filters before delivery.
+
+target_users:
+  - university students entering the job market
+  - job seekers transitioning between industries
+  - professionals updating their resume for the first time in years
+
+business_model: freemium subscription
+  # Free tier: 3 resume generations per month
+  # Pro tier: $9.99/month — unlimited generations, custom templates, cover letter
+  # Team tier: $49/month — up to 10 seats, branded templates, analytics dashboard
+
+tech_stack:
+  - Python / FastAPI (backend)
+  - React + TypeScript (frontend)
+  - PostgreSQL (user data)
+  - OpenAI GPT-4.1 (resume generation)
+  - WeasyPrint (PDF rendering)
+
+stage: MVP — 3 months of development planned
+team_size: 2 founders (1 engineer, 1 designer/marketer)

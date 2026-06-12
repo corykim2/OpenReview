@@ -1,0 +1,52 @@
+title: MindPace — Personalised Mental Wellness App
+
+description: |
+  MindPace is a mobile-first mental wellness app that uses adaptive AI to
+  personalise daily mindfulness exercises, mood tracking, and cognitive
+  behavioural therapy (CBT) micro-sessions based on each user's emotional
+  patterns and lifestyle data.
+
+  Unlike generic meditation apps, MindPace learns from check-in data,
+  sleep patterns (via HealthKit/Google Fit integration), and journal entries
+  to proactively suggest the right intervention at the right time — before
+  stress escalates.
+
+  The app is designed for everyday users, not clinical patients, and positions
+  itself as a "personal wellbeing coach in your pocket."
+
+target_users:
+  - Working professionals aged 25–45 experiencing work-related stress
+  - Students managing academic pressure
+  - Anyone looking to build consistent mindfulness habits
+
+business_model: |
+  Subscription-first with a generous free tier.
+  - Free: 5 check-ins/day, 3 guided sessions/week, basic mood analytics.
+  - Premium: $7.99/month or $59.99/year — unlimited sessions, AI personalisation,
+    sleep integration, journaling, progress reports.
+  - Corporate wellness: $4/employee/month (minimum 50 seats) — admin dashboard,
+    anonymised team wellness reports.
+
+  Target: 100,000 MAU and $200k MRR by end of Year 1.
+
+tech_stack:
+  - React Native (iOS + Android)
+  - Node.js / Express (API)
+  - MongoDB Atlas (user data + journals)
+  - OpenAI GPT-4.1 (personalisation engine)
+  - Apple HealthKit & Google Fit (biometric integration)
+  - RevenueCat (subscription management)
+  - Firebase (push notifications, analytics)
+
+stage: Pre-launch — 8 months of development, beta with 500 users
+team_size: 3 (2 engineers, 1 clinical psychologist advisor)
+
+content_library:
+  - 200+ guided audio sessions (licensed from certified mindfulness coaches)
+  - CBT exercise templates reviewed by clinical psychologist advisor
+  - Daily mood check-in framework based on PHQ-2 and GAD-2 screening tools
+
+compliance:
+  - HIPAA-adjacent data handling (not a medical device; no PHI collected)
+  - GDPR compliant (EU data residency option planned for Q3)
+  - App Store mental health category guidelines compliance

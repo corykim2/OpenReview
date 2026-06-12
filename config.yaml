@@ -1,0 +1,25 @@
+# OpenReview configuration
+#
+# provider: "mock" uses offline dummy responses (no API key required)
+#           "openai" uses the OpenAI API (requires OPENAI_API_KEY env var
+#                    or openai_api_key field below)
+
+provider: mock
+
+# OpenAI model to use when provider is "openai"
+model: gpt-4.1
+
+# Directory where generated reports are saved
+output: reports/
+
+# Directory containing prompt template files
+prompts_dir: prompts/
+
+# OpenAI API key (optional — prefer OPENAI_API_KEY environment variable)
+# openai_api_key: sk-...
+
+# LLM sampling temperature (0.0 = deterministic, 1.0 = creative)
+temperature: 0.7
+
+# Maximum tokens in each LLM response
+max_tokens: 1024

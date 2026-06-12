@@ -1,0 +1,40 @@
+title: FleetSense — IoT Fleet Monitoring SaaS
+
+description: |
+  FleetSense is a real-time fleet monitoring platform for SME logistics companies
+  operating between 10 and 200 vehicles. It combines IoT hardware (OBD-II dongles)
+  with a cloud dashboard to provide live GPS tracking, driver behaviour scoring,
+  predictive maintenance alerts, and fuel efficiency analytics.
+
+  The platform reduces fleet operating costs by an average of 18% (based on pilot
+  data from 3 logistics companies in Southeast Asia) through reduced fuel waste,
+  fewer unplanned repairs, and lower insurance premiums tied to driving scores.
+
+target_users:
+  - SME logistics operators (10–200 vehicles)
+  - Regional courier networks
+  - Last-mile delivery startups
+
+business_model: |
+  Hardware + SaaS hybrid model.
+  - Hardware: OBD-II dongle sold at cost ($35 one-time) to minimise adoption friction.
+  - SaaS: $15 per vehicle per month (annual contract; $18 month-to-month).
+  - Professional services: optional onboarding and driver training packages ($500–$2,000).
+
+  Target MRR after 12 months: $50,000 (assuming 200 vehicles on platform).
+
+tech_stack:
+  - Embedded C / MQTT (IoT firmware)
+  - Go (data ingestion microservice, 50k msg/s target)
+  - Python / Django (dashboard backend)
+  - TimescaleDB (time-series telemetry)
+  - React (web dashboard)
+  - React Native (driver mobile app)
+  - AWS ECS + RDS + IoT Core (infrastructure)
+
+stage: Seed stage — $400k raised, 12 months runway
+team_size: 5 (2 engineers, 1 hardware, 1 sales, 1 CEO)
+geography: Southeast Asia (Thailand, Vietnam, Indonesia) — expanding to India in Year 2
+regulatory_considerations:
+  - PDPA compliance (Thailand)
+  - Vehicle telematics regulations vary by country
