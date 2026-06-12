@@ -1,74 +1,143 @@
-# IdeaAudit
+# OpenReview
 
-> **An open-source AI platform for reviewing ideas and project proposals through multiple expert perspectives.**
+> **An open-source AI framework for structured idea and project proposal reviews using configurable expert agents.**
 
 ## 📖 Introduction
 
-IdeaAudit is an open-source framework that helps developers, entrepreneurs, students, and creators validate and improve their ideas using AI.
+OpenReview is an open-source framework that helps developers, students, entrepreneurs, and teams review ideas in a structured and repeatable way.
 
-Instead of relying on a single opinion, IdeaAudit evaluates ideas from multiple perspectives, including market potential, technical feasibility, business value, user experience, and potential risks, then generates actionable feedback and improvement suggestions.
+Instead of asking a language model for a single opinion, OpenReview executes multiple configurable review agents, each responsible for evaluating a specific aspect of an idea, such as technical feasibility, market potential, user experience, business value, and potential risks.
 
-Our goal is to make idea validation more structured, objective, and accessible for everyone.
+The framework aggregates these evaluations into a unified report, making idea validation more objective, transparent, and actionable.
 
 ---
 
 ## ✨ Features
 
-* 🤖 AI-powered idea and proposal analysis
-* 📊 Multi-expert evaluation (Business, Technology, UX, Market, Risk)
-* 📝 Automatic review report generation
-* 💡 Actionable improvement suggestions
-* 🔌 Extensible architecture for custom review modules
-* 🌍 Open-source and community-driven development
+* 🤖 Multi-agent AI review workflow
+* 📊 Specialized reviewers (Technology, Business, Market, UX, Risk)
+* 📝 Automatic Markdown review report generation
+* ⚙️ Configurable prompt templates
+* 📁 YAML/JSON project input support
+* 🔌 Easily extensible reviewer modules
+* 🌍 Open-source and community-driven
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-### Clone the repository
+### 1. Clone the repository
 
 ```bash
-git clone https://github.com/your-username/IdeaAudit.git
-cd IdeaAudit
+git clone https://github.com/your-username/OpenReview.git
+cd OpenReview
 ```
 
-### Install dependencies
+### 2. Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the project
+### 3. Configure your API key
 
 ```bash
-python main.py
+export OPENAI_API_KEY=your_api_key
+```
+
+### 4. Create an idea file
+
+```yaml
+title: AI Resume Builder
+
+description: |
+  A platform that automatically generates customized resumes using AI.
+
+target_users:
+  - Students
+  - Job seekers
+
+business_model:
+  Subscription
+```
+
+### 5. Run the review
+
+```bash
+python main.py --input examples/resume_builder.yaml
+```
+
+---
+
+## 📄 Example Output
+
+```text
+Overall Score: 84/100
+
+Technology
+- Technically feasible
+- Low implementation complexity
+
+Business
+- Clear subscription model
+- Strong competition exists
+
+Market
+- Large target audience
+- Existing competitors should be analyzed
+
+UX
+- User flow is simple
+- Resume customization should be improved
+
+Risk
+- Personal information handling required
+- AI hallucination should be considered
+
+Recommendations
+- Add portfolio generation
+- Support ATS optimization
 ```
 
 ---
 
 ## 📂 Project Structure
 
-```
-IdeaAudit/
-├── src/
-├── prompts/
-├── examples/
-├── docs/
-├── tests/
-├── README.md
-└── LICENSE
+```text
+OpenReview/
+
+src/
+    reviewers/
+        technology.py
+        business.py
+        market.py
+        ux.py
+        risk.py
+
+    report/
+        generator.py
+
+    prompts/
+
+examples/
+
+tests/
+
+docs/
+
+README.md
 ```
 
 ---
 
 ## 🎯 Roadmap
 
-* [ ] AI-powered multi-agent review system
-* [ ] Custom reviewer templates
-* [ ] GitHub integration
+* [ ] Parallel multi-agent execution
+* [ ] GitHub Action integration
 * [ ] Web dashboard
-* [ ] API support
-* [ ] Plugin ecosystem
+* [ ] Custom reviewer plugins
+* [ ] PDF report export
+* [ ] REST API support
 
 ---
 
@@ -76,7 +145,13 @@ IdeaAudit/
 
 Contributions are welcome!
 
-If you'd like to improve IdeaAudit, please feel free to submit issues, feature requests, or pull requests.
+You can contribute by:
+
+* Adding new reviewer modules
+* Improving prompt templates
+* Reporting bugs
+* Writing tests
+* Improving documentation
 
 ---
 
